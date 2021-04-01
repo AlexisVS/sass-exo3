@@ -1,0 +1,143 @@
+.banner
+    background: url("../img/bg-header.png")
+    height: 500px
+
+.programmers
+    background-color: #f3f3e5
+    display: flex
+    justify-content: center
+    align-items: center
+    .programmers-text
+        width: 65%
+        font-size: 2.25rem
+        text-align: center
+        color: #838383
+        padding: 3rem 0
+        .programmers-text--programmers
+            background-color: #3b9fe2
+            color: white
+        .programmers-text--complexity
+            color: #3b9fe2
+            font-weight: bold
+.cards
+    width: 70%
+    display: flex
+    justify-content: space-around
+    align-items: center
+    flex-wrap: wrap
+    margin: 0 auto
+    padding: 3rem 0
+    .card
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+        background-color: #ebebeb
+        padding: 0.8rem
+        width: 260px
+        border-radius: 8px
+        margin-bottom: 50px
+        i
+            color: #2f7fb4
+            font-size: 2rem
+            width: 60px
+            height: 60px
+            border-radius: 100%
+            background-color: #fff
+            display: flex
+            justify-content: center
+            align-items: center
+        .card-title
+            margin-bottom: 0
+            font-size: 1rem
+            font-weight: bold
+            text-transform: uppercase
+            color: #4e4e4e
+        .card-subtitle
+            margin-top: 0.5rem
+            font-size: 0.95rem
+            color: #2f7fb4
+        .card-text
+            font-size: 0.94rem
+            text-align: center
+            padding-bottom: 3rem
+            color: #797979
+.recentWork
+    width: 70%
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    margin: 0 auto
+    .recentWork-left
+        width: 40%
+        .recentWork-left-title
+            font-size: 1.5rem
+            color: #6e6e6e
+        .recentWork-left-textUp
+            width: 400px
+            color: #a8a8a8
+        .recentWork-left-textDown
+            width: 400px
+            color: #6e6e6e
+        button
+            background-color: #3a9ada
+            border: none
+            color: white
+            padding: 0.9rem 1rem
+            border-radius: 5px
+    .recent-work-right
+        width: 60%
+        display: flex
+        justify-content: center
+        align-items: center
+        .recent-work-right-cards
+            display: flex
+            justify-content: center
+            align-items: center
+            flex-direction: column
+            margin: 0 3px
+            .recent-work-right-cards-wapper
+                width: 100%
+                img
+                    width: 100%
+                    vertical-align: bottom
+            .recent-work-right-cards-down-wrapper
+                background-color: #43526d
+                border-bottom-left-radius: 5px
+                border-bottom-right-radius: 5px
+                text-align: center
+                .recent-work-right-cards-title
+                    color: #dbdbdb
+                    text-transform: uppercase
+                    font-size: 1.2rem
+                    font-weight: bold
+                .recent-work-right-cards-text
+                    color: #a5a5a5
+@media screen and (max-width:1600px)
+    .recentWork
+        flex-direction: column
+        align-items: center
+        .recent-work-right
+            width: 80%
+        .recentWork-left
+            order: 1
+            width: 80%
+            display: flex
+            flex-direction: column
+            .recentWork-left-title
+                width: 100%
+            .recentWork-left-textUp
+                width: 100%
+            .recentWork-left-textDown
+                width: 100%
+            button
+                margin: 0 auto
+@media screen and ( max-width: 1024px )
+    .recent-work-right
+        flex-direction: column
+        width: 100%
+        .recent-work-right-cards
+            padding-bottom: 2rem
+            .recent-work-right-cards-text
+                margin-left: 15px
+                margin-right: 15px
